@@ -12,10 +12,18 @@ namespace LoopAssigment1
         public void Song(int numbers)
         {
             for (int i = numbers; i > 0; i--) 
-            {
-                Console.WriteLine(i + " bottles of beer on the wall," + i + " bottles of beer.Take one down and pass it around,");
-                Console.WriteLine();
+            {   if (i > 1)
+                {
+                    Console.WriteLine(i + " bottles of beer on the wall," + i + " bottles of beer.Take one down and pass it around,");
+                    Console.WriteLine(); 
+                }
+
+                else 
+                { 
+                    Console.WriteLine(i + " bottles of beer on the wall," + i + " bottles of beer.Take one down and pass it around.");
+                }
             }
+
         }
 
     }
